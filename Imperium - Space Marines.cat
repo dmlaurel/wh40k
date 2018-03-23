@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="846d-3c14-21fc-369f" name="Imperium - Space Marines" book="Index: Imperium 1 &amp; Codex: Space Marines" revision="43" battleScribeVersion="2.01" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="846d-3c14-21fc-369f" name="Imperium - Space Marines" book="Index: Imperium 1 &amp; Codex: Space Marines" revision="44" battleScribeVersion="2.01" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -2261,6 +2261,22 @@
       <constraints/>
       <categoryLinks>
         <categoryLink id="f02a-f851-9f53-b1ed" name="New CategoryLink" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="e18d-5d4d-74f6-3f4e" name="Land Raider Variant" hidden="false" targetId="84c6-c6d5-423b-38b0" type="selectionEntry">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="59be-ab06-0b25-06d3" name="New CategoryLink" hidden="false" targetId="c888f08a-6cea-4a01-8126-d374a9231554" primary="true">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -18266,7 +18282,7 @@
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="1abc-6423-8b6c-8df9" name="New InfoLink" hidden="false" targetId="51af-0fb9-3ca5-d307" type="rule">
+        <infoLink id="1abc-6423-8b6c-8df9" name="Smoke Launchers" hidden="false" targetId="51af-0fb9-3ca5-d307" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -26956,6 +26972,781 @@
         <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="84c6-c6d5-423b-38b0" name="Land Raider Variant" hidden="false" collective="false" type="model">
+      <profiles>
+        <profile id="abd3-6d1b-3595-d95a" name="Explodes (6&quot;/D6)" book="Chapter Approved 2017" page="24" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="If this model is reduced to 0 wounds, roll a D6 before removing it from the battlefield. On a 6 it explodes, and each unit within 6&quot; suffers D6 mortal wounds."/>
+          </characteristics>
+        </profile>
+        <profile id="e835-d635-b94d-60fb" name="Land Raider" book="Chapter Approved 2017" page="24" hidden="false" profileTypeId="800f-21d0-4387-c943" profileTypeName="Unit">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="M" characteristicTypeId="0bdf-a96e-9e38-7779" value="*"/>
+            <characteristic name="WS" characteristicTypeId="e7f0-1278-0250-df0c" value="6+"/>
+            <characteristic name="BS" characteristicTypeId="381b-eb28-74c3-df5f" value="*"/>
+            <characteristic name="S" characteristicTypeId="2218-aa3c-265f-2939" value="8"/>
+            <characteristic name="T" characteristicTypeId="9c9f-9774-a358-3a39" value="8"/>
+            <characteristic name="W" characteristicTypeId="f330-5e6e-4110-0978" value="16"/>
+            <characteristic name="A" characteristicTypeId="13fc-b29b-31f2-ab9f" value="*"/>
+            <characteristic name="Ld" characteristicTypeId="00ca-f8b8-876d-b705" value="9"/>
+            <characteristic name="Save" characteristicTypeId="c0df-df94-abd7-e8d3" value="2+"/>
+          </characteristics>
+        </profile>
+        <profile id="87ea-cf8d-1a49-92ae" name="Land Raider 1" book="" page="" hidden="false" profileTypeId="5f4f-ea74-0630-4afe" profileTypeName="Wound Track">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Remaining W" characteristicTypeId="8e45-c866-b2d4-c9ab" value="9-16+"/>
+            <characteristic name="Characteristic 1" characteristicTypeId="bf41-c860-50bc-2a7e" value="10&quot;"/>
+            <characteristic name="Characteristic 2" characteristicTypeId="dc18-e51f-309b-8efa" value="3+"/>
+            <characteristic name="Characteristic 3" characteristicTypeId="df06-8eca-150f-90ba" value="6"/>
+          </characteristics>
+        </profile>
+        <profile id="7caa-d35d-4543-4194" name="Land Raider 2" book="" page="" hidden="false" profileTypeId="5f4f-ea74-0630-4afe" profileTypeName="Wound Track">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Remaining W" characteristicTypeId="8e45-c866-b2d4-c9ab" value="5-8"/>
+            <characteristic name="Characteristic 1" characteristicTypeId="bf41-c860-50bc-2a7e" value="5&quot;"/>
+            <characteristic name="Characteristic 2" characteristicTypeId="dc18-e51f-309b-8efa" value="4+"/>
+            <characteristic name="Characteristic 3" characteristicTypeId="df06-8eca-150f-90ba" value="D6"/>
+          </characteristics>
+        </profile>
+        <profile id="cb33-2493-d616-2b88" name="Land Raider 3" book="" page="" hidden="false" profileTypeId="5f4f-ea74-0630-4afe" profileTypeName="Wound Track">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Remaining W" characteristicTypeId="8e45-c866-b2d4-c9ab" value="1-4"/>
+            <characteristic name="Characteristic 1" characteristicTypeId="bf41-c860-50bc-2a7e" value="3&quot;"/>
+            <characteristic name="Characteristic 2" characteristicTypeId="dc18-e51f-309b-8efa" value="5+"/>
+            <characteristic name="Characteristic 3" characteristicTypeId="df06-8eca-150f-90ba" value="1"/>
+          </characteristics>
+        </profile>
+        <profile id="cbe4-9842-d38b-b977" name="Power Overload" book="Chapter Approved 2017" page="24" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="84c6-c6d5-423b-38b0" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dec0-3afb-4804-62f5" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="84c6-c6d5-423b-38b0" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a433-c7fa-d2de-c22d" type="equalTo"/>
+                        <condition field="selections" scope="84c6-c6d5-423b-38b0" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6695-b9a9-d5d2-6bec" type="equalTo"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="If you roll three or more hit rolls of 1 for this model’s lascannons or twin lascannons in the same phase, it experiences a power overload and suffers 6 mortal wounds."/>
+          </characteristics>
+        </profile>
+        <profile id="7d32-c31d-99b0-87a5" name="Frag Assault Launchers" book="Chapter Approved 2017" page="24" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="84c6-c6d5-423b-38b0" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a433-c7fa-d2de-c22d" type="notEqualTo"/>
+                    <condition field="selections" scope="84c6-c6d5-423b-38b0" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dec0-3afb-4804-62f5" type="notEqualTo"/>
+                    <condition field="selections" scope="84c6-c6d5-423b-38b0" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6695-b9a9-d5d2-6bec" type="notEqualTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Roll a D6 each time this model finishes a charge move within 1&quot; of an enemy unit; on a 4+ that unit suffers D3 mortal wounds."/>
+          </characteristics>
+        </profile>
+        <profile id="309d-8b81-4515-0b20" name="Land Raider (16 TC)" book="Chapter Approved 2017" page="24" hidden="false" profileTypeId="b3a8-0452-7436-44d1" profileTypeName="Transport">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="84c6-c6d5-423b-38b0" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6695-b9a9-d5d2-6bec" type="notEqualTo"/>
+                    <condition field="selections" scope="84c6-c6d5-423b-38b0" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a7ed-5ec9-756a-f689" type="notEqualTo"/>
+                    <condition field="selections" scope="84c6-c6d5-423b-38b0" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="376c-186c-0cf3-4701" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="Capacity" characteristicTypeId="15aa-1916-a38b-d223" value="This model can transport 16 &lt;CHAPTER&gt; INFANTRY models. Each JUMP PACK or TERMINATOR model takes the space of two other models and each CENTURION takes the space of three other models. It cannot transport PRIMARIS models."/>
+          </characteristics>
+        </profile>
+        <profile id="9c95-e68d-bca1-9f0f" name="Land Raider (12 TC)" book="Chapter Approved 2017" page="24" hidden="false" profileTypeId="b3a8-0452-7436-44d1" profileTypeName="Transport">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="84c6-c6d5-423b-38b0" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6695-b9a9-d5d2-6bec" type="notEqualTo"/>
+                    <condition field="selections" scope="84c6-c6d5-423b-38b0" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a7ed-5ec9-756a-f689" type="notEqualTo"/>
+                    <condition field="selections" scope="84c6-c6d5-423b-38b0" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e115-a3e1-65d0-def6" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="Capacity" characteristicTypeId="15aa-1916-a38b-d223" value="This model can transport 12 &lt;CHAPTER&gt; INFANTRY models. Each JUMP PACK or TERMINATOR model takes the space of two other models and each CENTURION takes the space of three other models. It cannot transport PRIMARIS models."/>
+          </characteristics>
+        </profile>
+        <profile id="9229-8f4e-fead-d868" name="Land Raider (11 TC)" book="Chapter Approved 2017" page="24" hidden="false" profileTypeId="b3a8-0452-7436-44d1" profileTypeName="Transport">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="84c6-c6d5-423b-38b0" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="376c-186c-0cf3-4701" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="84c6-c6d5-423b-38b0" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6695-b9a9-d5d2-6bec" type="equalTo"/>
+                        <condition field="selections" scope="84c6-c6d5-423b-38b0" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a7ed-5ec9-756a-f689" type="equalTo"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="84c6-c6d5-423b-38b0" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6695-b9a9-d5d2-6bec" type="notEqualTo"/>
+                        <condition field="selections" scope="84c6-c6d5-423b-38b0" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a7ed-5ec9-756a-f689" type="notEqualTo"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="Capacity" characteristicTypeId="15aa-1916-a38b-d223" value="This model can transport 11 &lt;CHAPTER&gt; INFANTRY models. Each JUMP PACK or TERMINATOR model takes the space of two other models and each CENTURION takes the space of three other models. It cannot transport PRIMARIS models."/>
+          </characteristics>
+        </profile>
+        <profile id="52b3-7b6e-c916-a09e" name="Land Raider (10 TC)" book="Chapter Approved 2017" page="24" hidden="false" profileTypeId="b3a8-0452-7436-44d1" profileTypeName="Transport">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="84c6-c6d5-423b-38b0" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6695-b9a9-d5d2-6bec" type="notEqualTo"/>
+                    <condition field="selections" scope="84c6-c6d5-423b-38b0" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a7ed-5ec9-756a-f689" type="notEqualTo"/>
+                    <condition field="selections" scope="84c6-c6d5-423b-38b0" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a433-c7fa-d2de-c22d" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="Capacity" characteristicTypeId="15aa-1916-a38b-d223" value="This model can transport 10 &lt;CHAPTER&gt; INFANTRY models. Each JUMP PACK or TERMINATOR model takes the space of two other models and each CENTURION takes the space of three other models. It cannot transport PRIMARIS models."/>
+          </characteristics>
+        </profile>
+        <profile id="0847-e092-c712-8aaa" name="Land Raider (7 TC)" book="Chapter Approved 2017" page="24" hidden="false" profileTypeId="b3a8-0452-7436-44d1" profileTypeName="Transport">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="84c6-c6d5-423b-38b0" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e115-a3e1-65d0-def6" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="84c6-c6d5-423b-38b0" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6695-b9a9-d5d2-6bec" type="equalTo"/>
+                        <condition field="selections" scope="84c6-c6d5-423b-38b0" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a7ed-5ec9-756a-f689" type="equalTo"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="84c6-c6d5-423b-38b0" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6695-b9a9-d5d2-6bec" type="notEqualTo"/>
+                        <condition field="selections" scope="84c6-c6d5-423b-38b0" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a7ed-5ec9-756a-f689" type="notEqualTo"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="Capacity" characteristicTypeId="15aa-1916-a38b-d223" value="This model can transport 7 &lt;CHAPTER&gt; INFANTRY models. Each JUMP PACK or TERMINATOR model takes the space of two other models and each CENTURION takes the space of three other models. It cannot transport PRIMARIS models."/>
+          </characteristics>
+        </profile>
+        <profile id="9fba-5f59-fcfa-5772" name="Land Raider (6 TC)" book="Chapter Approved 2017" page="24" hidden="false" profileTypeId="b3a8-0452-7436-44d1" profileTypeName="Transport">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="84c6-c6d5-423b-38b0" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6695-b9a9-d5d2-6bec" type="equalTo"/>
+                    <condition field="selections" scope="84c6-c6d5-423b-38b0" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a7ed-5ec9-756a-f689" type="equalTo"/>
+                    <condition field="selections" scope="84c6-c6d5-423b-38b0" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="376c-186c-0cf3-4701" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="Capacity" characteristicTypeId="15aa-1916-a38b-d223" value="This model can transport 6 &lt;CHAPTER&gt; INFANTRY models. Each JUMP PACK or TERMINATOR model takes the space of two other models and each CENTURION takes the space of three other models. It cannot transport PRIMARIS models."/>
+          </characteristics>
+        </profile>
+        <profile id="95cc-6c2a-efbb-9082" name="Land Raider (5 TC)" book="Chapter Approved 2017" page="24" hidden="false" profileTypeId="b3a8-0452-7436-44d1" profileTypeName="Transport">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="84c6-c6d5-423b-38b0" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a433-c7fa-d2de-c22d" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="84c6-c6d5-423b-38b0" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6695-b9a9-d5d2-6bec" type="equalTo"/>
+                        <condition field="selections" scope="84c6-c6d5-423b-38b0" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a7ed-5ec9-756a-f689" type="equalTo"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="84c6-c6d5-423b-38b0" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6695-b9a9-d5d2-6bec" type="notEqualTo"/>
+                        <condition field="selections" scope="84c6-c6d5-423b-38b0" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a7ed-5ec9-756a-f689" type="notEqualTo"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="Capacity" characteristicTypeId="15aa-1916-a38b-d223" value="This model can transport 5 &lt;CHAPTER&gt; INFANTRY models. Each JUMP PACK or TERMINATOR model takes the space of two other models and each CENTURION takes the space of three other models. It cannot transport PRIMARIS models."/>
+          </characteristics>
+        </profile>
+        <profile id="2389-6f60-3c0a-939e" name="Land Raider (2 TC)" book="Chapter Approved 2017" page="24" hidden="false" profileTypeId="b3a8-0452-7436-44d1" profileTypeName="Transport">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="84c6-c6d5-423b-38b0" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6695-b9a9-d5d2-6bec" type="equalTo"/>
+                    <condition field="selections" scope="84c6-c6d5-423b-38b0" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a7ed-5ec9-756a-f689" type="equalTo"/>
+                    <condition field="selections" scope="84c6-c6d5-423b-38b0" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e115-a3e1-65d0-def6" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="Capacity" characteristicTypeId="15aa-1916-a38b-d223" value="This model can transport 2 &lt;CHAPTER&gt; INFANTRY models. Each JUMP PACK or TERMINATOR model takes the space of two other models and each CENTURION takes the space of three other models. It cannot transport PRIMARIS models."/>
+          </characteristics>
+        </profile>
+        <profile id="8ec7-4413-6a8e-252f" name="Power of the Machine Spirit" book="Chapter Approved 2017" page="24" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="This model does not suffer the penalty to hit rolls for moving and firing Heavy Weapons."/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="442c-ef73-c44f-5ab9" name="Smoke Launchers" hidden="false" targetId="c883-3078-1367-cc2c" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" field="447f-86b0-8f75-cd5b" value="0.0">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="db93-f885-55c8-79e6" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="447f-86b0-8f75-cd5b" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="fff6-3d9f-5b03-18d5" name="New CategoryLink" hidden="false" targetId="84e2-9fa9-ebe6-1d18" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="9d27-706d-785b-2764" name="New CategoryLink" hidden="false" targetId="c7b7-edbc-bc14-6238" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="b17f-bcea-94bf-aafa" name="New CategoryLink" hidden="false" targetId="0366-7ccd-2513-2a38" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="ded0-0507-6d8d-3b0d" name="New CategoryLink" hidden="false" targetId="c8fd-783f-3230-493e" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="8d98-d62d-3166-cbf1" name="1. Primary Sponson Weapons" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69c6-54e5-3f79-9b36" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="325f-52cc-5fae-26e5" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries>
+            <selectionEntry id="a433-c7fa-d2de-c22d" name="2x Twin Lascannon [TC = 10]" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="f71d-37ca-de26-32bd" name="Twin lascannon" hidden="false" targetId="1662-54b9-46da-fefc" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="2x Twin Lascannon">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="376c-186c-0cf3-4701" name="2x Hurricane Bolter [TC = 16]" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="5085-a31a-3e1b-d5f7" name="Hurricane bolter" hidden="false" targetId="0c32-fc5b-5235-f6ba" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="2x Hurricane Bolter">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e115-a3e1-65d0-def6" name="2x Flamestorm Cannon [TC = 12]" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="7c88-accc-c199-d445" name="Flamestorm cannon" hidden="false" targetId="49ae-4451-9bc0-5238" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="2x Flamestorm Cannon">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="a7ed-5ec9-756a-f689" name="2. Secondary Sponson Weapons" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6dd3-707c-a29f-5494" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries>
+            <selectionEntry id="dec0-3afb-4804-62f5" name="2x Lascannon [-5 TC]" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="7c55-f631-4dc5-1dc6" name="Lascannon" hidden="false" targetId="f14a-07e5-5465-69cf" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="2x Lascannon">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="386c-c822-5b36-67ae" name="2x Heavy Bolter [-5 TC]" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="c9e5-e7fe-d8ab-5a07" name="Heavy bolter" hidden="false" targetId="e2b0-b9f1-6c38-584c" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="2x Heavy Bolter">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7ea7-8dd8-b93c-84f3" name="2x Heavy Flamer [-5 TC]" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="693c-d580-e3f2-340b" name="Heavy flamer" hidden="false" targetId="2608-8425-4f4f-7f41" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="2x Heavy Flamer">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="0f21-6790-24d2-4a7e" name="3. Hull-mounted Weapon" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ae2-161b-b4b7-682c" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79e3-b07c-3421-479b" type="min"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries>
+            <selectionEntry id="6695-b9a9-d5d2-6bec" name="Twin Lascannon [-5 TC]" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="7708-2dfa-6b56-0593" name="Twin lascannon" hidden="false" targetId="1662-54b9-46da-fefc" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Twin Lascannon">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="6980-a663-59e6-2136" name="Twin Heavy Bolter [-0 TC]" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="7152-8a15-43a9-d559" name="Twin heavy bolter" hidden="false" targetId="6644-7150-c910-865d" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Twin Heavy Bolter">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b97b-916d-0a8a-023d" name="Twin Assault Cannon [-0 TC]" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="dfdf-91f0-abae-fc20" name="Twin assault cannon" hidden="false" targetId="acb8-7501-1f1b-b483" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="name" value="Twin Assault Cannon">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="d1b8-1181-0701-af30" name="4. Weapon Options" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="c62e-e4a6-3214-aa9a" name="Hunter-killer missile" hidden="false" targetId="32bf-b117-4ecf-5165" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="points" value="0.0">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8bde-3165-d0c6-df0e" type="max"/>
+              </constraints>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="0599-1a5e-b787-ac06" name="Storm bolter" hidden="false" targetId="2b03-8d64-3711-f300" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="points" value="0.0">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="722e-f86f-c95d-05c2" type="max"/>
+              </constraints>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="dde5-58e6-15df-c1f3" name="Multi-melta" hidden="false" targetId="2b37-65ee-9443-b4ef" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="points" value="0.0">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62f3-b3af-f47f-a32e" type="max"/>
+              </constraints>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks/>
+      <costs>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="30.0"/>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="f11e-6eca-c706-dff0" name="Sgt Equipment" hidden="false" collective="false">
@@ -29064,7 +29855,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="This model does not suffer he penalty to hit rolls for moving and firing Heavy Weapons."/>
+        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="This model does not suffer the penalty to hit rolls for moving and firing Heavy Weapons."/>
       </characteristics>
     </profile>
     <profile id="26a1-7cd2-c9e6-d6ab" name="Frag Assault Launchers" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
